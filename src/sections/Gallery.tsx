@@ -2,13 +2,15 @@ import { useState } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { X, ZoomIn } from 'lucide-react';
 
+const imageBase = `${import.meta.env.BASE_URL}images/`;
+
 const galleryImages = [
-  { src: '/images/gallery-1.jpg', alt: 'Blonde balayage' },
-  { src: '/images/gallery-2.jpg', alt: 'Chic bob haircut' },
-  { src: '/images/gallery-3.jpg', alt: 'Elegant updo' },
-  { src: '/images/gallery-4.jpg', alt: 'Modern pixie cut' },
-  { src: '/images/gallery-5.jpg', alt: 'Long layered hair' },
-  { src: '/images/gallery-6.jpg', alt: 'Sleek straight hair' },
+  { src: `${imageBase}gallery-1.jpg`, alt: 'Blonde balayage' },
+  { src: `${imageBase}gallery-2.jpg`, alt: 'Chic bob haircut' },
+  { src: `${imageBase}gallery-3.jpg`, alt: 'Elegant updo' },
+  { src: `${imageBase}gallery-4.jpg`, alt: 'Modern pixie cut' },
+  { src: `${imageBase}gallery-5.jpg`, alt: 'Long layered hair' },
+  { src: `${imageBase}gallery-6.jpg`, alt: 'Sleek straight hair' },
 ];
 
 export function Gallery() {

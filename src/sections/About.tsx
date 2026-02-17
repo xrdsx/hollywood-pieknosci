@@ -16,7 +16,7 @@ export function About() {
           >
             <div className="relative aspect-[3/4] overflow-hidden">
               <img
-                src="/images/about.jpg"
+                src={`${import.meta.env.BASE_URL}images/about.jpg`}
                 alt="Patrycja Kaźmierska-Skałban - Fryzjerka"
                 className="w-full h-full object-cover"
               />

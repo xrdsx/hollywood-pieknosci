@@ -99,7 +99,7 @@ export function Hero() {
               style={{ transitionDelay: '400ms' }}
             >
               <img
-                src="/images/hero.jpg"
+                src={`${import.meta.env.BASE_URL}images/hero.jpg`}
                 alt="Elegantna fryzura"
                 className="w-full h-full object-cover object-center"
               />
